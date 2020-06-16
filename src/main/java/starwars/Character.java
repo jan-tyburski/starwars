@@ -6,9 +6,12 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
+//Character model
 class Character {
 
-    private @Id @GeneratedValue Long id;
+    private @Id
+    @GeneratedValue
+    Long id;
     private String name;
     private String height;
     private String mass;
@@ -26,7 +29,8 @@ class Character {
     private String edited;
     private String url;
 
-    Character() {}
+    Character() {
+    }
 
     Character(String name, String height, String mass, String hairColor, String skinColor, String eyeColor, String birthYear, String gender, String homeworld, String films[], String species[], String vehicles[], String starships[], String created, String edited, String url) {
 

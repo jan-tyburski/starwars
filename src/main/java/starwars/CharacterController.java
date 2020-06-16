@@ -7,7 +7,7 @@ import java.util.List;
 
 @RestController
 
-
+//Controller for character actions.
 public class CharacterController {
     private final CharacterRepository repository;
 

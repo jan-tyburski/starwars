@@ -11,6 +11,7 @@ class LoadDatabase {
 
     private static final Logger log = LoggerFactory.getLogger(LoadDatabase.class);
 
+    //Some characters for initiation database characters.
     @Bean
     CommandLineRunner initDatabase(CharacterRepository repository) {
 
@@ -22,10 +23,10 @@ class LoadDatabase {
                     "19BBY", "male",
                     "https://swapi.dev/api/planets/1/",
                     new String[]{"https://swapi.dev/api/films/2/",
-                    "https://swapi.dev/api/films/6/",
-                    "https://swapi.dev/api/films/3/" +
-                    "https://swapi.dev/api/films/1/" +
-                    "https://swapi.dev/api/films/7/"},
+                            "https://swapi.dev/api/films/6/",
+                            "https://swapi.dev/api/films/3/" +
+                                    "https://swapi.dev/api/films/1/" +
+                                    "https://swapi.dev/api/films/7/"},
                     new String[]{"https://swapi.dev/api/species/1/"},
                     new String[]{"https://swapi.dev/api/vehicles/14/", "https://swapi.dev/api/vehicles/30/"},
                     new String[]{"https://swapi.dev/api/starships/12/", "https://swapi.dev/api/starships/22/"},
@@ -52,13 +53,13 @@ class LoadDatabase {
                     new String[]{"https://swapi.dev/api/films/1/",
                             "https://swapi.dev/api/films/2/",
                             "https://swapi.dev/api/films/3/" +
-                            "https://swapi.dev/api/films/4/" +
-                            "https://swapi.dev/api/films/5/" +
-                            "https://swapi.dev/api/films/6/"},
+                                    "https://swapi.dev/api/films/4/" +
+                                    "https://swapi.dev/api/films/5/" +
+                                    "https://swapi.dev/api/films/6/"},
                     new String[]{"https://swapi.dev/api/species/2/"},
                     new String[]{},
                     new String[]{},
-                    "2014-12-10T15:10:51.357000Z","2014-12-20T21:17:50.309000Z",
+                    "2014-12-10T15:10:51.357000Z", "2014-12-20T21:17:50.309000Z",
                     "http://swapi.dev/api/people/2/")));
         };
     }
